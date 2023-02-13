@@ -96,7 +96,7 @@ describe('Catalog Viewer', () => {
     expect(viewer.src).toContain(catalogs[0].image)
     fireEvent.click(toggleSlideShowBtn, { button: '0' })
     expect(toggleSlideShowBtn.checked).toEqual(true)
-    act (() => jest.advanceTimersByTime(6010))
+    act (() => jest.advanceTimersByTime(7010))
     expect(viewer.src).toContain(catalogs[2].image)
   })
 
